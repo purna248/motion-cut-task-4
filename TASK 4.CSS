@@ -1,0 +1,113 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/172219944/photo/raceday.jpg?s=612x612&w=0&k=20&c=AJZsPviohyPkgm5wQyVJktHkiThwbn0mHc_Z5aVUpcw=")no-repeat center/cover;;
+}
+.magazine {
+    position: relative;
+    width: 50%;
+    height: 75%;
+    background: url("https://i.pinimg.com/736x/03/3f/0a/033f0a6158ac7e4c1320fa9c466ba935.jpg") no-repeat center/cover;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.magazine-cover {
+    text-align: left;
+    color: yellow;
+    font-size: 15px;
+
+}
+.magazine:hover {
+    transform: scale(1.05);
+}
+.magazine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 10px;
+}
+.title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.headline {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.caption {
+    color:white;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    z-index: 2;
+    font-weight: 600;
+}
+.highlight {
+    color: red; 
+    font-weight: bold; 
+    font-size: 15px;
+  }
+  
+.cta {
+    position: relative;
+    display: inline-flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: crimson;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 2;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+.cta:hover {
+    background: white;
+    transform: scale(1.1);
+}
+/* for removing underline in a tag*/
+.cta a {
+    text-decoration: none;
+  }
+
+.quote {
+    color: white;
+	font-weight: bold;
+    text-align: left;
+    font-size: 19px;
+    font-style: garamond;
+    margin-top: 100px;
+}
